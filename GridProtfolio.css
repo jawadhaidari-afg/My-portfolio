@@ -7,7 +7,9 @@
     --accent:#F3E2D4;
     --dark:#010313;
     --light:#E9E3DF;
-    --gray:#98A1BC;
+    --gray:#a9afc2;
+    --lightgray:rgb(229, 229, 229);
+    --buttoncolor:rgba(47, 47, 199, 0.772);
     --transition:all 0.3s ease;
     --shadow:0 10px 30px rgba(0,0,0,0.1);
     --radius:10px;
@@ -32,7 +34,7 @@ body{
 
 a{
     text-decoration: none;
-    color: var(--gray);
+    color: var(--primary);
 }
 img{
     max-width: 100%; /* why used the max-width instead of width:100%?*/
@@ -41,7 +43,7 @@ img{
 .container{
     width: 90%;
     max-width: 1200px;  /* Why using 1200px along width:90%?*/
-    margin: 0 auto;
+    margin: 0 auto ;
     padding: 0 20px;
 }
 .section-title{
@@ -64,7 +66,8 @@ img{
 .btn{
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--gray);
+    background-color: var(--primary);
+    border: 1px solid black;
     color: var(--dark);
     border-radius: var(--radius);
     font-weight: 600;
@@ -73,7 +76,7 @@ img{
     cursor: pointer;
 }
 .btn:hover{
-    color: var(--primary);
+    color: #fff;
     transform: translate(-3px);
     box-shadow: var(--shadow);
 }
@@ -104,16 +107,10 @@ header{
     list-style: none;
 
 }
-.nav-menu:hover{
-    color: blue;
-    transform: scale(1.2rem);
-}
 .nav-link{
     font-weight: 600;
     transition: var(--transition);
-}
-.nav-link:hover{
-    color: var(--dark)
+     transform: scale(1.5rem) translateY(-5px);
 }
 
 /* Hero Section */
@@ -139,14 +136,163 @@ header{
     margin-bottom: 2rem;
     color: var(--dark);
 }
+.hero-image{
+    position: relative;
+    
+}
 .hero-image::before{
     content: '';
     position: absolute;
-    width: 40%;
-    height: 75%;
+    width: 100%;
+    height: 100%;
     background-color: var(--accent);
     border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
-    /* z-index: 1; */
-    opacity: 0.2;
+    z-index: 1;
+    opacity: 0.3;
     transform: scale(1.2);
+}
+
+/* About Section */
+
+.about{
+    padding: 0;
+}
+.about-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+}
+.skill-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.skill-item{
+    background: var(--light);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+.skill-item:hover{
+    transform: translateY(-10px) scale(1.1);
+}
+.skill-icon{
+    font-size:2rem;
+    color: rgb(62, 62, 244);
+    margin-bottom: 1rem;
+}
+.skill-item{
+    margin-top: 2rem;
+}
+
+/* Portfolio Section */
+
+.portfolio{
+    padding: 6rem 0;
+    background: linear-gradient(90deg, #33a1e9 50%, #1c6aa8 40%);
+    color: #fff;
+}
+.portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: var(--grid-gap);
+}
+.portfolio-item{
+    background: linear-gradient(60deg, #159033 10%, #1cccaa 100%);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.portfolio-item:hover{
+    transform: translateX(-10px) scale(1.1);
+}
+.portfolio-img{
+    height: 200px;
+    background: var(--light);
+    display: grid;
+    place-content: center;
+    font-size: 2.5rem;
+}
+.portfolio-content{
+    padding: 1.5rem;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 1rem;
+}
+
+/* Contact Section */
+
+.contact {
+    padding: 6rem 0;
+    background: linear-gradient(230deg, #435879 40%, #154e7198 100%);
+}
+.contact-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    color: var(--light);
+}
+.contact-info{
+    font-size: 1.5rem;
+    color: var(--light);
+}
+.contact .section-title{
+    color: var(--light);
+}
+.contact-form{
+    display: grid;
+    gap: 1.5rem;
+    resize: vertical;
+    width: 100%;
+    max-width: 1200px;
+}
+.form-group{
+    display: grid;
+    gap: 0.5rem;
+}
+.form-input{
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    resize: vertical;
+    
+}
+textarea .form-input{
+    min-height: 150px;
+    
+}
+
+/* Responsive Desgin Basic */
+
+@media(max-width:600px){
+    .nav-menu{
+        display: none;
+    }
+    .section-title{
+        font-size: 2rem;
+    }
+    .hero-content h1{
+        font-size: 2rem;
+    }
+    .skill-grid{
+        grid-template-columns: 1fr;
+    }
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+    .skill-icon{
+        font-size: 1.5rem;
+    }
+    .skill-icon h4{
+        font-size: 0.5rem;
+    }
 }
