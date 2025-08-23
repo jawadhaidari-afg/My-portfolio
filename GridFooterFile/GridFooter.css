@@ -5,7 +5,7 @@
     --secondary:rgb(215, 215, 187);
     --accent:rgb(161, 161, 194);
     --dark: rgb(30, 25, 25);
-    --light:rgb(137, 91, 91);
+    --light:rgba(60, 51, 51, 0.922);
     --transition: all .3s ease in;
     --shadow: 0 10px 30px rgba(0,0,0,0.1);
     --radius:10px;
@@ -41,11 +41,10 @@ a{
     background-color: var(--secondary);
 }
 .footer-grid{
-    border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     line-height: 2.2rem;
-    
+       
 }
 .footer-title::after{
     content: '';
@@ -59,12 +58,16 @@ a{
     left: 50%;
 }
 .footer-title{
-    border: 1px solid black;
     display: grid;
-    place-content: center;
+    place-content: center start;
     position: relative;
+    gap: 0.5rem;
 
 }
+.footer-title:nth-child(2){
+    margin-top: 2rem;
+}
+
 .footer-title h3{
     color: #fff;
     text-align: center;
@@ -72,9 +75,14 @@ a{
     padding-bottom: 2rem;
 }
 .footer-title a{
-    color: var(--accent);
+    color: rgb(244, 255, 237);
     font-size: 1.2rem;
     font-weight: 100;
+    transition: .3s ease;
+}
+.footer-title a:hover{
+    color: #fff;
+    transform: translateX(10px);
 }
 li{
     list-style: none;

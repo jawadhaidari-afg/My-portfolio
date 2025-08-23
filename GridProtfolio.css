@@ -110,7 +110,7 @@ header{
 .nav-link{
     font-weight: 600;
     transition: var(--transition);
-     transform: scale(1.5rem) translateY(-5px);
+    transform: scale(1.5rem) translateY(-5px);
 }
 
 /* Hero Section */
@@ -271,6 +271,56 @@ textarea .form-input{
     
 }
 
+/* Footer Section */
+
+.footer{
+    background: linear-gradient(200deg, #34496a 20%, #154e71a5 100%);
+    line-height: 2.2rem;
+    height: 300px;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--grid-gap);
+
+}
+.footer-title{
+    display: grid;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    margin-top: 1.5rem;
+}
+.footer-title::after{
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color:var(--gray);
+    position: absolute;
+    bottom: 190px;
+    transform: translate(-50%);
+    left: 42%;
+}
+li{
+    list-style: none;
+}
+.footer-title h4{
+    font-size: 1.4rem;
+    font-weight: 200;
+    padding:0.5rem 0 1.2rem
+}
+.footer-title a{
+    font-size: 1.1rem;
+    color: rgb(234, 233, 233);
+    line-height: 2rem;
+    /* transition: var(--transition); */
+    font-weight: 100;
+}
+.footer-title a:hover{
+    color: #FFF;
+    transform: translateX(10px);
+}
 /* Responsive Desgin Basic */
 
 @media(max-width:600px){
@@ -295,4 +345,23 @@ textarea .form-input{
     .skill-icon h4{
         font-size: 0.5rem;
     }
+}
+
+/* Footer Responsice Basic*/
+@media(max-width:700px){
+    .footer-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer{
+        height: 600px;
+    }
+    .footer-title::after{
+        bottom: 190px;              /* problem on adjustifying the line on multi screen*/
+    }
+    .footer-title h4{
+        font-size: 1.2rem;
+    }
+     .footer-title a{
+        font-size: 0.95rem;
+     }
 }
