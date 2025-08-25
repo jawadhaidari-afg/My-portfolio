@@ -1,0 +1,71 @@
+
+/* Declaration Variables */
+:root{
+    --primary:powderblue;
+    --secondary:skyblue;
+    --third:blue;
+    --dark:black;
+    --light:whitesmoke;
+    --aacent:gray;
+    --transition: all .3 ease;
+    --shadow: 5px 10px 20px rgba(0,0,0,0.2);
+    --radius:10px;
+    --grid-gap:2rem;
+
+}
+
+/* Universal Selector */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body Section */
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--dark);
+    background-color: var(--light);
+    overflow-x: hidden;
+}
+
+/* Anchor Link Styles */
+a{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+/* Order listed Styles */
+li{
+    text-decoration: none;
+    /* list-style: none; */
+}
+
+/* body section */
+.container{
+    background-color: var(--primary);
+    width: 40%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 1px solid black;
+
+}
+
+/* Top Section */
+.top-section{
+    background-color: var(--secondary);
+}
+.grid-section{
+    border: 1px solid green;
+    display: grid;
+    justify-content: center;
+}
+.background-image{
+    width: 100%;
+    height: auto;
+    background-image: url(../IMG_3277.jpeg);
+}
+.background-image img{
+    width: 200px;
+
+}

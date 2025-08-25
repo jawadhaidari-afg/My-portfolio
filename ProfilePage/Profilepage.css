@@ -34,29 +34,71 @@ a{
 }
 
 /* image Top */
-
-.main-container{
-    max-width:35%;
-    width: 1200px;
-    margin:2rem auto;
-    padding: 0 2rem;
-    background-color: var(--accent);
-    border: 1px solid black;
-    border-radius: var(--radius-corner);
-    display: grid;
-    justify-content: center;
-}
-.container{
-    background-color: var(--primary);
-    display: grid;
-}
-
-.img-container{
-    display: flex;
-    justify-content: center;
-}
-
-.img-container img{
+img{
     width: 100%;
     height: 100%;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px 10px 0 0;
+
+}
+.container{
+    display: grid;
+    justify-content: center;
+    margin: 2% 35%;
+    padding: 10px 10px;
+    border: 1px solid black;
+    background-color: var(--light);
+    border-radius: var(--radius-corner);
+}
+.top-content{
+   background-color: var(--accent);
+   width: 100%;
+   border-radius: 30px 30px 0 0;
+   
+}
+.background-img{
+    border: 1px solid red;
+    position: relative;
+    
+}
+.background-img img{
+    border-radius: 30px 30px 0 0;
+}
+.profile-img{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+      /* why the image hidden and don't pops up with z-index:99;?*/
+}
+.profile-img img{
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    position: relative;
+    top: -0%;
+    
+}
+.profile-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.profile-text h3,h5{
+    color: white;
+    display: grid;
+    position: relative;
+    top: -150px;
+}
+.profile-text h3{
+    font-weight: 300;
+    font-family:fantasy;
+}
+.profile-text h5{
+    font-weight: 100;
+    font-family: sans-serif;
+}
+.profile-text{
+    display: flex;
+    /* flex-direction: row; */
 }
