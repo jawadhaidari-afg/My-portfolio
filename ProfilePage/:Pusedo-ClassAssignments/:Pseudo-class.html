@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo-Class</title>
+</head>
+<style>
+    img{
+        width: 50%;
+        height: 50%;
+    }
+    body{
+        background-color: lightblue;
+        margin: 2rem 5rem;
+        padding: 1rem 2rem;
+    }
+   :where(h3, h4, img){
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .footer:has(h4){
+        color: #FFF;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    :is(h3){
+        background-color: gray;
+        color: blue;
+    }
+    :not(p){
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 100;
+    }
+</style>
+<body>
+    <span>
+    <h3>:Where</h3>
+    <h3>:has</h3>
+    <h3>:is</h3>
+    <h3>:not</h3>
+</span>
+<br>
+<div class="container">
+    <h3>Explanation of :Where Psuedo Class, used in modern css and works for elements has no any specifities</h3>
+    <div class="content">
+        <h3>Explanation of :Has Psuedo Class, also used in modern css and works as parent selector or tragets a specified child of parent</h3>
+    </div>
+    <div class="context">
+        <h4> Explanation of :Has Psuedo Class, also used in modern css and works to select  specified elements </h4>
+        
+    </div>
+    <div class="footer">
+        <h4>:not Class Selector, used to select element that is select by this :not selector.</h4>
+        <img src="../../a55769f429a7b45c2c173c3abc7743d9.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolore magni deleniti autem blanditiis numquam tempora labore est odit veniam aut aliquid a minus, totam maxime architecto doloribus consequuntur accusamus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolore magni deleniti autem blanditiis numquam tempora labore est odit veniam aut aliquid a minus, totam maxime architecto doloribus consequuntur accusamus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolore magni deleniti autem blanditiis numquam tempora labore est odit veniam aut aliquid a minus, totam maxime architecto doloribus consequuntur accusamus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolore magni deleniti autem blanditiis numquam tempora labore est odit veniam aut aliquid a minus, totam maxime architecto doloribus consequuntur accusamus.</p>
+    </div>
+</div>
+</body>
+</html>
