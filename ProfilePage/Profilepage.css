@@ -1,0 +1,62 @@
+/* Variable Declaration */
+:root{
+    --primary:green;
+    --secondary:lightblue;
+    --accent:gray;
+    --dark:black;
+    --light:whitesmoke;
+    --transition:all .3s ease-in-out;
+    --shadow:0 10px 20px rgba(0,0,0,0.2);
+    --radius:10px;
+    --radius-corner:30px;
+    --grid-gap:1rem;
+}
+
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body section */
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark);
+    background-color: var(--whitesmoke);
+    overflow-x: hidden;
+}
+
+/* Anchor link */
+a{
+    text-decoration: none;
+    color: var(--drak);
+}
+
+/* image Top */
+
+.main-container{
+    max-width:35%;
+    width: 1200px;
+    margin:2rem auto;
+    padding: 0 2rem;
+    background-color: var(--accent);
+    border: 1px solid black;
+    border-radius: var(--radius-corner);
+    display: grid;
+    justify-content: center;
+}
+.container{
+    background-color: var(--primary);
+    display: grid;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
