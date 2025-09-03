@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator </title>
+
+</head>
+
+<body>
+    <div id="output"></div>
+    <!-- <script src="Calculator.js"></script> -->
+    <!--Why add on head section doesn't work?-->
+
+
+<!--Inline JavaScript Syntas Sections-->
+     <script>
+        //confirm()
+        var test;
+        if(window.confirm('Do you wanna accept?')){
+            text = "confirmed successfully by the client";
+        }
+        else{
+            text = "cancelled by client";
+        }
+    </script>
+     
+    <script>
+        //Alert()
+        let alertTesting;
+        if( window.alert('Confirm first to open the page')){
+            alertTesting = "Welcome to the Windows Page";
+        }
+    </script>
+
+    <script>
+        //Prompt
+        //const admiting;
+        let name = window.prompt('Write your name pls', 'Jawad');
+        if(name == null || name ==""){
+            document.getElementById("name").innerHTML="Enter your name pls";
+        }
+        else
+        {
+            document.getElementById("name").innerHTML= name;
+        }
+    </script>
+
+
+<!--Recoding the Alert(), Confirm() and Prompt() -->
+    <script>
+        //confirm
+        let texting;
+        if(window.confirm('Do you wanna see the changes')){
+            texting = "Yes";
+        } else {
+            texting = "No";
+        }
+    </script>
+
+    <script>
+        //alert
+        let alertTexting;
+        if(window.alert("confirm to start downloading")){
+            alertTexting = "Downloading Started";
+        }
+    </script> 
+
+    <script>
+        //prompt
+        let promptTexting;
+        if(prompt("Accept to see the updates")){
+            promptTexting = "Yes";
+        }
+        else
+        {
+            promptTexting ="No";
+        }
+    </script>  
+
+<!--JavaScript Operator Section-->
+    <div id="outputA">HTML Section</div>
+    <script src="Calculator.js"></script>
+    <h2>Arithmatic Operators</h2>
+    <p>+, -, *, /, %, ++, --</p>
+
+    <script>
+        //Addition
+        let numberA = 40;
+        let numberB = 60;
+        let numberC = numberA + numberB;
+        //document.getElementById('').innerHTML = numberC;
+        console.log(numberC);
+
+    </script>
+
+    <script>
+        //subtration
+        let numberD = 40;
+        let numberE = 60;
+        let numberF = numberA - numberB;
+
+        console.log(numberF);
+    </script>
+
+    <script>
+        //Multiply
+        let numberG = 40;
+        let numberH = 60;
+        let numberI = numberA * numberB;
+
+        console.log(numberI);
+    </script>
+
+    <script>
+        //Division
+        let Number1 = 40;
+        let number2 = 60;
+        let numberx = Number1 / number2;
+        console.log(numberx);
+    </script>
+
+    <script>
+        //reminder
+        var x = 2450;
+        var y = 33;
+        var xy = x % y;
+        console.log(xy);
+    </script>
+
+    <script>
+        var a = 340;  //pre-increment 
+        // var b = 230;
+        var c = ++a;
+        console.log(c);
+
+        var n = 400;    //pre-decrement
+        var m = --n;
+        console.log(m);    
+    </script>
+
+    <h2>String Concatination</h2>
+    <dl>
+        <dt>+</dt>
+            <ul>
+                <li>is the only sign operator which concatinate two or more values in JavaScript</li>
+            </ul>
+        
+    </dl>
+    <script>
+        //String Concatination
+        var X = "Salam";
+        var Y = "Afghanistan";
+        var z = X + " " + Y;
+        console.log(z);
+
+        var I = 10;     //concatinating number with string
+        var II = "سلام";
+        var III = "125";
+        var IV = 25;
+        var XI = I +" " +II+" "+" "+IV+III;
+        console.log(XI);
+
+        var XV = II +" "+25;
+        console.log(XV);
+    </script>
+
+    <h2>Comparison Operators</h2>
+       <p>==, ===, !=, >, <, >=, <=, </p>. 
+
+       <script>
+        let aa = 100;
+        let bb = 80;
+        let cc = "80";
+        let dd = "Hi!";
+
+        let result = aa==bb;  // two equal values
+        console.log(result);
+
+        let EqValue = bb == cc;  // two equal values
+        console.log(EqValue);
+        
+        let EqDaType = bb === cc;     //two equal values with identical data type
+        console.log(EqDaType);
+
+        let Ineq = cc != dd;  //two inequal values
+        console.log(Ineq);
+
+        let GT = aa > bb;   //greater than 
+        console.log(GT);
+
+        let LT = aa < bb;   //lower than
+        console.log(LT);
+
+        let GTE = aa >= bb;   //greater than or equal
+        console.log(GTE);
+
+        let LTE = bb <= aa;     //lower than or equal
+        console.log(LTE);
+
+
+
+        // if(nn("if two values are equal"))
+        // {
+        //     nn = "Ture";            
+        // }
+        // else
+        // {
+        //     nn ="False";
+        // }
+       </script>
+
+       <h2>Logical Operators</h2>
+       <p>&&, ||, !</p>
+       
+       <script>
+        // multiply of Binary operation
+        let Testa = 200;
+        let Testb = 300;
+        // let TestX = TestV && Testv;
+        
+        if(Testa && Testb){
+            console.log("Yes");
+        }
+        else
+        {
+            console.log("No");
+        }
+
+        //Addtion of Binary Operator
+        if(Testa||Testb)
+        {
+            console.log("correct");
+        }
+        else
+        {
+            console.log("incorrect");
+        }
+
+        //Complement Binary Operation
+        if(!Testb)
+        {
+            console.log('Wrong');
+        }
+        else{
+            console.log('Right');
+        }
+       </script>
+
+       <h2>Assignment Operators</h2>
+       <p>=, +=, -=, *=, /=, %=</p>
+
+       <script>
+        let number1 = 200;
+        let number3 = 300;
+        let numberX = 100;
+
+        let assignV = number1=number3;  //assigning left operand to the right operand
+        console.log(assignV);
+
+        let addV = number1 += numberX; //adding left operand to right and the adding back to the left operand
+        console.log(addV);
+
+        let subV = number3 -= number1; //subtracting left operand from right operand and adding back the result to the left operand
+        console.log(subV);
+
+        let multiV = numberX *= number3; //multiplying left operand to the right operand and adding the result to the left operand
+        console.log(multiV);
+
+        let dividV = number1 /= number3;  // dividing left operand on right operand and adding the result on the left operand
+        console.log(dividV);
+
+        let remiV = number3 %= numberX; //dividing the left operand on right operand and adding the reminder on the left operand
+        console.log(remiV);
+
+       </script>
+
+       <h2>Ternary Operator</h2>
+       <p>if else condition</p>
+       <p>condition ? a : b;</p>
+
+       <script>
+        //ternary operator
+      // let biggerFig = 500;
+      // let lowerFig = 200;
+      // let compareFig = biggerFig >= lowerFig;
+        // console.log(compareFig);
+        // if(compareFig('If the biggerFig is greater than lowerFig')){
+        //     compareFig ="Greater";
+        // }
+        // else 
+        // {
+        //     compareFig ="Lower";
+        // }
+       // let resultFig = biggerFig < lowerFig ? biggerFig : lowerFig; //why the result is not shown?
+
+        // var tt = 200;
+        // var rr = 300;
+        
+        //var rr > tt ? tt : rr;   // why the result not pops up?
+       </script>
+
+       <!--Static Calulator Assignment
+       (+, - , * , /, %, ++, --) -->
+
+       <h1>Static Calculator</h1>
+       <p>+, -, *, /, %, ++, --</p>
+       <script>
+        let BiNum = 300;  // Addition Section
+        let LoNum = 150;
+        let Addition = '+';  // not very clear
+        if(Addition=='+'){
+            let addResult = BiNum+LoNum;
+            console.log(addResult);
+        }
+
+        let Subtraction = '-';  //Subtraction section
+        if(Subtraction=='-'){
+            let SubResult = BiNum - LoNum;
+            console.log(SubResult);
+        }
+
+        let Multiply ='*';  //Multiply Section
+        if(Multiply=="*"){
+            let MulResult = BiNum * LoNum;
+            console.log(MulResult);
+        }
+
+        let Division = '/';  //Division Section
+        if(Division=='/'){
+            let DivResult = BiNum / LoNum;
+            console.log(DivResult);
+        }
+
+        let Reminder = '%';     //Remaining Section
+        if(Reminder=='%'){
+            let RemResult = BiNum % LoNum;
+            console.log(RemResult);
+        }
+
+        // let Concatinate ='++';      /* Concatinate Section but why gives error? */
+        // if(Concatinate=='++'){
+        //     let ConResult = BiNum ++ LoNum;
+        //     console.log(ConResult);
+        // }
+       </script>
+</body>
+
+</html>
