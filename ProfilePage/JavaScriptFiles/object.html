@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects: Create Objects, Access Properties & Methods</title>
+</head>
+
+<body>
+    <script>
+       //literal || initializer object
+       var literal = {
+        firstname: "Aziz",
+        lastname: "Azizi",
+        Age: "30",
+        nationality: "Afghan",
+        getFullName: function(){
+            return this[firstname]+' '+this[lastname];
+        }
+       }
+        console.log('getFullName');
+
+
+       //object constractor 
+       let constractor = new object();
+       constractor[name] = "Ahmad";
+       constractor.lastname = "Mohammadi";
+       constractor.age = "24";
+       constractor[nationality] = "Afghan";
+       constractor.getFullName = function (){
+        return this.name+' '+this.lastname+' '+this.age;
+       }
+      console.log('constractor');
+
+            
+       /* Enumerate Object's Propertie
+        using the for in */
+        let ID = {
+            FirstName: 'Mursal',
+            NakeName: 'Kosha',
+            Grade: '11',
+            Province: 'Kabul',
+            getFullName: function(){
+                return this.FirstName+' '+this.Grade+' '+this.Province;
+            }
+        }
+        for(var Java in ID)
+        {
+            console.log(ID[Java]);
+        }
+        
+        for(let script in ID)
+        {
+            console.log(ID.script);
+        }
+
+
+        //Pass by Reference 
+        function byPass(test){
+            test.country= 'Afghanistan';
+            test.nationality= 'Afghani';
+        }
+        var changenationality = {
+            nationality: "afghan",            
+        }
+        bypass(changenationality);
+        console.log(changenationality)
+
+        let changecountry = {
+            country: "Iceland",
+        }
+        bypass(changecountry);
+        console.log(changecountry);
+
+
+        //Nested Object
+        let nested = {
+            name: "Mir Ahmad",
+            Job: "Teacher",
+            Salary: "30k",
+            Education: {
+                schoolName: "Ghyasodin Ghori",
+                university: "Kabul Univeristy",
+            }
+        }
+        console.log(nested.Education.university);
+        cosole.log(nested.Job);
+    </script>
+</body>
+
+</html>
