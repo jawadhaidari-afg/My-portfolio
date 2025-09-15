@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Assignment </title>
+    <style>
+        body{
+            margin-top: 20%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color:white;
+        }
+        .main{
+            display: relative;
+            border: transparent;
+            width: 300px;
+            height: 80px;
+            border-radius: 10px;
+            background-color:rgba(255, 255, 255,09);   
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 5px 5px 1cqi rgba(0, 0, 0, 0.3);
+
+        }
+        #clock{
+            color:black;
+            display: grid ;
+            place-content: center;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="clock"></div>
+    </div>
+    
+
+    <script>
+        let Time = new Date('2025-9-15'); //why error time?
+        document.getElementById('clock').innerHTML=Time;
+    </script>
+</body>
+</html>

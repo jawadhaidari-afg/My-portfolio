@@ -16,22 +16,22 @@
         Age: "30",
         nationality: "Afghan",
         getFullName: function(){
-            return this[firstname]+' '+this[lastname];
+            return this.firstname+' '+this.lastname;
         }
        }
-        console.log('getFullName');
+        console.log(literal.getFullName());
 
 
        //object constractor 
-       let constractor = new object();
-       constractor[name] = "Ahmad";
+       let constractor = new Object();
+       constractor.name = "Ahmad";
        constractor.lastname = "Mohammadi";
        constractor.age = "24";
-       constractor[nationality] = "Afghan";
+       constractor.nationality = "Afghan";
        constractor.getFullName = function (){
         return this.name+' '+this.lastname+' '+this.age;
        }
-      console.log('constractor');
+      console.log(constractor.getFullName());
 
             
        /* Enumerate Object's Propertie
@@ -64,13 +64,13 @@
         var changenationality = {
             nationality: "afghan",            
         }
-        bypass(changenationality);
+        byPass(changenationality);
         console.log(changenationality)
 
         let changecountry = {
             country: "Iceland",
         }
-        bypass(changecountry);
+        byPass(changecountry);
         console.log(changecountry);
 
 
@@ -85,7 +85,7 @@
             }
         }
         console.log(nested.Education.university);
-        cosole.log(nested.Job);
+        console.log(nested.Job);
     </script>
 </body>
 
