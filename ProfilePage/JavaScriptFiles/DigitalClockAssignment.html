@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock Assignment</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: #000; 
+        }
+        .main{
+           /* border: 1px solid white; */
+            width: 1000px;
+            height: 400px;
+            background-color: #000;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 10px;
+        }
+        #Hour, #Minute, #Seconds{
+            border: 1px solid black; 
+            width: 300px;
+            height: 250px;
+            display: inline-block;
+            background-color: #c8b0b048;
+            text-align: center;
+            margin-top: 70px;
+            margin-left: 20px;
+            border-radius: 5px;
+            font-size: 160px;
+            color:#fff;
+            font-weight: 600;
+            text-align: center;
+            padding-top: 20px;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="main">
+    <div id="Hour">20</div>
+    <div id="Minute">33</div>
+    <div id="Seconds">44</div>
+</div>
+
+<script>
+    // getHours 
+let date = new date();
+let Hour = date.getHours();
+document.getElementById('Hour').innerHTML=Hour;
+
+    //getMinutes()
+var Minutes = date.getMinutes();
+document.getElementById('Minute').innerHTML=Minutes;
+
+    //getSeconds()
+    const Seconds = date.getSeconds();
+    document.getElementById('Seconds').innerHTML=Seconds;
+
+
+</script>
+</body>
+</html>

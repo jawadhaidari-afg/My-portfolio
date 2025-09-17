@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array JavaScript</title>
+  </head>
+  <body>
+  
+<div>
+    <ul><h1>JavaScript Arrays:</h1></ul>
+        <ol>Create</ol>
+        <ol>Access</ol>
+        <ol>Add</ol>
+        <ol>Remove</ol>  
+</div>
+
+<script>
+    // Array Syntax  ArrayName = [a,b,c,d,e,f];   literal array 
+    //Array Object syntax   ArrayNamr = new Array (a,b,c,d,e,f);
+    //Different Formats of Array Elements
+    //Array Size using length
+    //Accessing Array Elements 
+                //.at()
+                //array[index]
+    //Array.forEach
+    //Array for()
+    //Array for...in
+    //Array for...of
+
+    // Array Syntax  ArrayName = [a,b,c,d,e,f]; 
+     let intNum = [1,2,3,4,5,6,7,8]; //literal array 
+     let DifElem =[2.2, 'Ali',23,'a', 'two', true, false];
+     const obj = new Array (1,2,3,4,5,6,7,8,9,0);  //object array
+
+    //Array Size using length
+   // console.log(intNum.length);
+   // console.log(DifElem.length);
+   // console.log(obj.length);
+//
+   //  //Accessing Array Elements 
+   // console.log(intNum[4]);
+   // console.log(DifElem.at(-1));
+   // console.log(obj[0]);
+
+    //Array for()
+    for (var simp = 0; 0<= intNum.length-1;simp++)
+{
+      console.log(intNum[simp]);  
+  }
+
+    // for ..in
+    for (let lopin in intNum){
+        console.log(intNum[lopin])
+    };
+    for (var inlop in DifElem){
+        console.log(DifElem[inlop])
+    };
+
+    //.forEach()
+
+   // inutNum.forEach(function(intNum,i)){
+        console.log(intNum[i])
+    //}
+
+    // for of
+</script>
+  </body>
+</html>

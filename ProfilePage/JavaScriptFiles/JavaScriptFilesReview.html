@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavasScript Review up to Array Method Based on ToturialsTeach </title>
+</head>
+
+<body>
+    <div id="Prompt"></div>
+    <div id="mail"></div>
+    <div id="Arithmatic"></div>
+    <script>
+        // popup Messages 
+        // Alert(), Confirm(), Prompt()
+        // alert('This is a Welcome Message');
+        // if(true){
+        //confrim('the respond is correct')
+        //}
+        //else 
+        //{
+        //  'the respond is incorrect'
+        //}
+        // let update;
+        // if(alert('New Update is available'))
+        // {
+        // update = 'click to start downloading';
+        // };
+
+        //  var news;
+        //  if(confirm('Accept Terms and condition to go the next level'));{
+        //      news = 'Terms and condition successfully accepted';
+        //  }
+
+        //prompt (meesage, defualtValue)
+        //     let Num = prompt('Add your Phone Number, please')
+        //     if(Num == null|| Num ==" ")
+        //     {
+        //         document.getElementById("Prompt").innerHTML="Number Added";
+        //     }
+        //     else 
+        //     {
+        //         document.getElementById("Prompt").innerHTML=Num;
+        //    };
+        //     
+        //     let mail = prompt("Add Your E-mail Here");
+        //     if(Email==null|| Email =="")
+        // {
+        //     document.getElementById("mail").innerHTML="Kindly add your Email Here";
+        // }
+        // else 
+        // {
+        //     document.getElementById("mail").innerHTML=mail;
+        // };
+
+        //JavaScript Operators
+        //Arithmatic Operators
+        //Comparison Operators
+        //Logical Operators
+        //Assignment operators
+        //Conditional Operators
+        //Teranay Operators
+
+        // Arithmatic Calculation
+        // +,-,*,/,%,++,--
+        let num1 = 2025;
+        let num2 = 2030;
+        let adding = num1 + num2;
+        document.getElementById("Arithmatic").innerHTML = adding;
+        console.log(adding);
+
+        // Sub.
+        let sub = num1 - num2;
+        document.getElementById("Arithmatic").innerHTML = sub;
+
+        // Time
+        let Time = num1 * num2;
+        document.getElementById("Arithmatic").innerHTML = Time;
+
+        //Division
+        let Div = num1 / num2;
+        document.getElementById("Arithmatic").innerHTML = Div;
+
+        //reminder
+        let Rem = num1 % num2;
+        document.getElementById("Arithmatic").innerHTML = Rem;
+
+        // Increment 
+        let g = 2025;
+        let Incre = ++g;
+        document.getElementById("Arithmatic").innerHTML = Incre;
+
+        let h = 2030;
+        let Decr = --h;
+        document.getElementById("Arithmatic").innerHTML = Decr;
+
+        // Comparison Operators
+        //==,===,!=,>,<,>=,>==
+        let NumCom = 2020;
+        let NumCom1 = 2000;
+        let NumCom2 = 'Hello';
+
+        // Equal Value
+        let EquVal = NumCom == NumCom1;
+        document.getElementById("Arithmatic").innerHTML = EquVal;
+
+        // Equal Reference 
+        let EquRef = NumCom === NumCom2;
+        document.getElementById("Arithmatic").innerHTML = EquRef;
+        console.log(EquRef);
+
+        //!=
+        let NotEqu = NumCom != NumCom2;
+        document.getElementById("Arithmatic").innerHTML = NotEqu;
+        console.log(NotEqu);
+
+        //>
+        let Greater = NumCom > NumCom1;
+        document.getElementById("Arithmatic").innerHTML = Greater;
+
+        //<
+        var Lower = NumCom < NumCom1;
+        document.getElementById("Arithmatic").innerHTML = Lower;
+
+        //>=
+        var GreEqual = NumCom >= NumCom1;
+        document.getElementById("Arithmatic").innerHTML = GreEqual;
+
+        //<=
+        var LowerEqual = NumCom <= NumCom2;
+        document.getElementById("Arithmatic").innerHTML = LowerEqual;
+
+        //Logical Operators
+        //&&,||,!
+        let Val1 = 2001;
+        let Val2 = 2002;
+
+        //Multiple of Binary 
+        if (Val1 && Val2) {
+            document.getElementById("Arithmatic").innerHTML = "Yes";
+        }
+        else {
+            document.getElementById("Arithmatic").innerHTML = "No";
+        }
+
+        let Name = "Name";
+        let LastName = "LastName";
+        if (Name && LastName) {
+            document.getElementById("Arithmatic").innerHTML = Name;
+        }
+        else {
+            document.getElementById("Arithmatic").innerHTML = LastName;
+        }
+
+        // Addition of Binary
+        if (Name || LastName) {
+            document.getElementById("Arithmatic").innerHTML = Name;
+        }
+        else {
+            document.getElementById("Arithmatic").innerHTML = LastName;
+        }
+        // console.log(Name||LastName);
+
+        //! Complementary of Binary
+        if (!Val1) {
+            document.getElementById("Arithmatic").innerHTML = "Right";
+        }
+        else {
+            document.getElementById("Arithmatic").innerHTML = "Wrong";
+        }
+
+        //Assignment Operators
+        //=,+=,-=,*=,/=,%=
+        let Assig1 = 2000;
+        let Assig2 = 3000;
+
+        let resultAssign = Assig1 = Assig2;
+        document.getElementById("Arithmatic").innerHTML = resultAssign;
+
+        //+=
+        /* let resultMinus = Assig1 -= Assig2;
+            document.getElementById("Arithmatic").innerHTML=resultMinus;*/
+
+        //*=
+        let resultTime = Assig1 *= Assig2;
+        document.getElementById("Arithmatic").innerHTML = resultTime;
+        console.log(resultTime);
+
+        ///= 
+        let ResDiv = Assig1 /= Assig2;
+        document.getElementById("Arithmatic").innerHTML = ResDiv;
+        console.log(ResDiv);
+
+        //%=
+        let ResRem = Assig1 %= Assig2;
+        document.getElementById("Arithmatic").innerHTML = ResRem;
+        console.log(ResRem);
+
+        // Teranary Operators
+        let BiggerVal = 20;
+        let LowerVal = 19;
+        let FirstRes = BiggerVal > LowerVal ? LowerVal : BiggerVal;
+        document.getElementById("Arithmatic").innerHTML = FirstRes;
+        console.log(FirstRes);
+
+
+        // JavaScript Data Types
+        /*Primitive Data Types
+                 - String = "",'',` `;
+                 - Number 
+                 - BigInt
+                 - Boolean 
+                 - Null 
+                 - Undefined
+                 */
+        //Structural Data Types
+        /* 
+        - Object
+        - Date 
+        - Array
+        */
+
+        // JavaScript String
+        /* 
+        - use '', " ", ` ` to add a string in a JavaScript
+        - Use String Templates ${ } to add variable and to write a multi line string
+        - str[ ]
+        - .at( )
+        - charAt()
+        */
+
+        // Quotes Inside  String
+        // can add "" inside ' ' and Vice Versa
+
+        // String concatination
+        // + , concat()
+
+        // String Object
+        //String Comparison
+        // <, >, ==, ===
+        // note: can compare two strings with localeCompare()
+
+        //String Comparison
+
+        //Lower than
+        let Value1 = 'a';
+        let Value2 = 'b';
+        let BigRes = Value1 < Value2;
+        document.getElementById("Arithmatic").innerHTML = BigRes;
+
+        //Bigger Than
+        let LowRes = Value1 < Value2;
+        document.getElementById("Arithmatic").innerHTML = LowRes;
+        console.log(LowRes);
+
+        //Equal Value
+        let EquValue = Value1 == Value2;
+        document.getElementById("Arithmatic").innerHTML = EquValue;
+
+        //Equal Reference
+        let EquRefe = Value1 === Value2;
+        document.getElementById("Arithmatic").innerHTML = EquRefe;
+        document.getElementById("Arithmatic").innerHTML = Value1.localeCompare(Value2);
+
+        //String Methods and Properties
+        //String Methods
+
+        let Testing = 'This is Data Century';
+        document.getElementById("Arithmatic").innerHTML = Testing[8];
+        document.getElementById("Arithmatic").innerHTML = Testing.at(10);
+        document.getElementById("Arithmatic").innerHTML = Testing.charAt(13);
+        console.log(Testing[18]);
+        console.log(Testing.charCodeAt(12))
+        document.getElementById("Arithmatic").innerHTML = Testing.charCodeAt(15);
+        document.getElementById("Arithmatic").innerHTML = Testing + "  ".concat(Value1);
+        // console.log(Bold(Testing))
+
+
+        //JavaScript Numbers: 
+        /* 
+            - Integers
+            - Float /Decemal
+            - Binary
+            - Octal   
+            - Hexadecimal 
+            - Exponential
+        */
+
+        // Integers:
+        // is accurate to 16 number, more than 16 is round up / round down
+
+        // Bigint :
+        // is also Integer and is more than 16 digits, should put an "N" to make it specific so that the JavaScript doesn't round it up / round down.
+
+        // Floating-point/ Decimal Numbers:
+        // is till 17 digit, more than becomes rounding.
+
+        // Note:
+        // in string the -, * and / operators work except + due to it is defined as string concatiantion.
+
+        // Binary:
+        // is 0,1 --> 0b
+        // Octal:
+        // is 0-7 --> 0o
+        //Hexadecimal:
+        // is 0-9 and a-f --> 0x
+        //Exponential:
+        // is beN 
+
+
+        //Numbers()
+        //Compare Numbers
+        //==,===
+
+        let num10 = 200;
+        let num20 = 200;
+        let resnum = num10 === num20;
+        document.getElementById("Arithmatic").innerHTML = resnum;
+        console.log(resnum);
+
+        //Number Properties
+        let number = 200;
+        document.getElementById('Arithmatic').innerHTML = number.Min_VALUE;
+        console.log(number.MAX_VALUE);
+
+        //Number Methods
+        /* 
+            -toExponential
+            -toFixed
+            -toLocaleString
+            -toPrecision
+            -toString
+            -Valueof
+        */
+        //toExponential
+        let method = 100000;
+        console.log(method.toExponential());
+        document.getElementById("Arithmatic").innerHTML = method.toExponential();
+
+        //toFixed
+        console.log(method.toFixed(2))
+        document.getElementById("Arithmatic").innerHTML = method.toFixed(3);
+
+        //toLocaleString()
+        console.log(method.toLocaleString(3));
+        document.getElementById("Arithmatic").innerHTML = method.toLocaleString();
+
+        //toPercision
+        console.log(method.toPrecision(1));
+        document.getElementById("Arithmatic").innerHTML = method.toPrecision(5);
+
+        //toString
+        console.log(method.toString());
+        document.getElementById("Arithmatic").innerHTML = method.toString(2);
+
+        //Valueof
+        console.log(method.valueOf(2));
+        document.getElementById("Arithmatic").innerHTML = method.toString();
+
+
+
+
+    </script>
+</body>
+
+</html>

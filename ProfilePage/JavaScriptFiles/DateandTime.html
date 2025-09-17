@@ -43,24 +43,24 @@
     let Time1 = new Date('2025-9-15-2-30-500z');
     document.getElementById('Time').innerHTML=Time1;
     console.log(Time1);
-
+    let date = new Date();
 
     let Time2 = new Date();
     console.log(Time2);
 
     let Time3 = date.toLocaleDateString();  //Why it dosen't work?
     console.log(Time3);
-    document.getElemengetElementById('Time3').innerHTMl=Time3;
+    document.getElementById('Time3').innerHTMl=Time3;
 
     let Time4 = date.toDateString();
     console.log(Time4);
-     document.getElemengetElementById('Time4').innerHTMl=Time4;
-
+     document.getElementById('Time4').innerHTMl=Time4;
+    
      let Time5 = date.toGMTString();
      console.log(Time5);
      document.getElementById('Time5').innerHTML=Time5;
 
-     let Time6 = date.ISOString();
+     let Time6 = date.toISOString();
      console.log(Time6);
 
      var Time7 = date.toLocaleString();
@@ -69,7 +69,7 @@
      var Time8 = date.toLocaleTimeString();
      console.log(Time8);
 
-     var Time9 = date.toString(yyyy-mm-dd);
+     var Time9 = date.toString('yyyy-mm-dd');
      console.log(Time9);
 
      var Time10 = date.toTimeString();
@@ -84,11 +84,11 @@
  <div id="Compare"></div>
  <script>
        //Compare Dates in JavaScript
-   //  var Time20 = new Date('15-9-2025');
-   //  var Time21 = new Date('14-9-2025');
+     var Time20 = new Date('15-9-2025');
+    var Time21 = new Date('14-9-2025');
 
      if(Time20 < Time21)
-        alert(Time20 + "It is an incorrect comparing"+Time21);
+        alert("It is an incorrect comparing");
         else (Time20 > Time21)
             alert(Time20+'It is a correct Comparing'+Time21);
         
