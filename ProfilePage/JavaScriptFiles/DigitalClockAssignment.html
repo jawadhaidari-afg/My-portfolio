@@ -52,19 +52,35 @@
 
 <script>
     // getHours 
-let date = new date();
-let Hour = date.getHours();
-document.getElementById('Hour').innerHTML=Hour;
+//let date = new Date();
+//let Hour = date.getHours();
+//document.getElementById('Hour').innerHTML=Hour;
+//
+//    //getMinutes()
+//var Minutes = date.getMinutes();
+//document.getElementById('Minute').innerHTML=Minutes;
+//
+//    //getSeconds()
+//    const Seconds = date.getSeconds();
+//    document.getElementById('Seconds').innerHTML=Seconds;
 
-    //getMinutes()
-var Minutes = date.getMinutes();
-document.getElementById('Minute').innerHTML=Minutes;
 
-    //getSeconds()
-    const Seconds = date.getSeconds();
-    document.getElementById('Seconds').innerHTML=Seconds;
+let updateClock = ()=>{
+    let date = new Date();
+    let Hour = date.getHours();
+   // console.log(Hour);
+    document.getElementById("Hour").innerHTML=Hour;
 
-
+    let Minute = date.getMinutes();
+    document.getElementById("Minute").innerHTML=Minute;
+  //  console.log(Minute);
+    
+    let Seconds = date.getSeconds();
+   // console.log(Seconds);
+    document.getElementById("Seconds").innerHTML=Seconds;
+};
+setInterval(updateClock, 1000);
+document.getElementById("Hour").innerHTML=updateClock;
 </script>
 </body>
 </html>

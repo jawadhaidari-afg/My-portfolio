@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App JavaScript First Small Class Project</title>
+    <style>
+        /* body section */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: teal;
+            display: flex;
+            /*place-content: center;*/
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        /* container section */
+        .todo-container {
+            background: rgb(0, 60, 60);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            width: 340px;
+            box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.35);
+            align-items: center;
+        }
+
+        /* header 2 section */
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        /* input text section */
+        input {
+            width: 75%;
+            padding: 7px;
+            border: 1px solid #000;
+            border-radius: 7px;
+        }
+
+        /* unordered list */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 18px;
+        }
+
+        /* ordered list section */
+        li {
+            padding: 8px;
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        li.completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        /* button section */
+        button {
+            padding: 7px 15px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+
+        }
+
+        .delete-btn {
+            background: red;
+            border: none;
+            color: white;
+            padding: 8px 4px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="todo-container">
+        <h2>To-Do List</h2>
+        <input type="text" name="input" id="taskInput" placeholder="Register a new Task" />
+        <button id="addBtn">Add</button>
+        <ul id="taskList">
+            <!-- 
+                 <li>a</li>
+                 <li>b</li>
+                 <li>c</li>
+                 <li>d</li> 
+                             -->
+        </ul>
+    </div>
+
+    <script src="To_DoApp.js"></script>
+</body>
+
+</html>
