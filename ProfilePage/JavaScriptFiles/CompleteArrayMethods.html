@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays</title>
+  </head>
+  <body>
+    <ul id="output"></ul>
+        <script>
+          let mylist = document.getElementById("output");
+      //using square bracket
+      let myarr = ["A", 1, 2, "Hello World"];
+      myarr[4] = "I have been added";
+      //     console.log(myarr.at(-4));
+      //     let arr = new Array(1,2,"ABC");
+      //     for(let val in myarr)
+      // {
+      //     console.log(myarr[val]);
+      // }
+      // for(let i =0;i<=myarr.length-1;i++)  //for(initialization; condition; increment/decrement)
+
+      // {
+      //      console.log(myarr[i]);
+      // }
+      //  console.log(arr[2]);
+      //  myarr.forEach(function(i)
+      // {
+      //     console.log(i);
+      // })
+      //   myarr.forEach(function (myar, i) {
+      //     console.log("at position: " + i + " this element " + myar + " Exist");
+      //   });
+      // myarr.forEach((myar,i)=>{
+      //     console.log(`${i}: ${myar}`);
+      // })
+      myarr1 = [1, 2, 34, 5, 6, 7, 7, 8,8,9,10,11,20,8];
+      // for(let i of myarr1)
+      // {
+      //     console.log(i);
+      // // }
+      // myarr1[0] = 0;
+      // myarr1[1] = 1;
+      // myarr1[5] = 7;
+      // myarr1[6] = 8;
+      // myarr1[8] = 9;
+      // myarr1[myarr1.length] = 10;
+      // myarr1.push(11); // Push is used to enter at the end of array
+      // myarr1.unshift(0, 1, 2, 3); // pushes at the start of the array
+      // myarr1.pop(); // removes from the upper bound of array
+      // myarr1.shift(); // removes from the lower bound
+      // // console.log( myarr1);
+      // myarr1.splice(3,5);
+      // for (let i of myarr1) {
+      //   console.log(i);
+      // }
+      let cities = ["Mumbai", "New York", "Paris", "Sydney"];
+      let cityToBeRemoved = "Paris";
+
+      // let mycities = cities.filter(function (item) {
+      //   return item !== cityToBeRemoved;
+      // });
+
+      // console.log(mycities); //["Mumbai", "New York", "Sydney"]
+      // console.log(cities); //["Mumbai", "New York", "Paris", "Sydney"]
+
+      // let newarr = cities.concat(myarr1);
+      // for(let val in newarr)
+      // {
+      //   let li = document.createElement("li");
+      //   li.textContent =newarr[val];
+      //   mylist.appendChild(li);
+      // }
+    //   let myar = [3,5,9,11];
+    //   let even1 = myar.every(function(num)
+    // {
+    //   return num % 2 ==1;
+    // });
+    // console.log(even1);
+
+  //   let odd = myarr1.filter(function(num)
+  // {
+  //   return num % 2 ===1;
+  // });
+  // console.log(odd);
+//   myarr1.forEach(function(num)
+// {
+//   let li = document.createElement("li");
+//         li.textContent =num;
+//         mylist.appendChild(li);
+// })
+// for(let i =0;i<=5;i++)
+// {
+//    let li = document.createElement("li");
+//         li.textContent =myarr1[i];
+//         mylist.appendChild(li);
+// }
+// for(let i in myarr1)
+// {
+//   let li = document.createElement("li");
+//         li.textContent =myarr1[i];
+//         mylist.appendChild(li);
+// }
+// for(let i of myarr1)
+// {
+//   let li = document.createElement("li");
+//         li.textContent =i;
+//         mylist.appendChild(li);
+// }
+// console.log(myarr1.indexOf(5));
+// console.log(myarr1.lastIndexOf(30))
+// console.log(myarr1.join(cities));
+// let newar = myarr1.map(function(num){
+//     return num +10;
+// })
+// console.log(newar);
+// let sum = cities.reduce(function(acc,cur)
+// {
+//   return acc+cur;
+// })
+// console.log(sum);
+// console.log(myarr1.reverse())
+// console.log(myarr1.slice(4,10));
+// let ar = myarr1.slice(4,6);
+// console.log(ar);
+ let myar = [2,5,9,11];
+    //   let even1 = myar.some(function(num)
+    // {
+    //   return num % 2 ==1;
+    // });
+    // console.log(even1)
+    // console.log(myarr1.sort())
+    console.log(myarr1)
+    let newar = myarr1.splice(7,4); // 1=0
+    console.log(myarr1.unshift(4))
+    console.log(newar);
+    </script>
+  </body>
+</html>
