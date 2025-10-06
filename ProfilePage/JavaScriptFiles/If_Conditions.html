@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Conditionals in JS</title>
+</head>
+<body>
+    <h1 id="output"></h1>
+    <h2 id="Display"></h2>
+    <h3 id="Outcome"></h3>
+    <script>
+        let out =document.getElementById("output");
+        let Dis = document.getElementById("Display");
+        let Price = document.getElementById("Outcome");
+        // Single Condition / One Condition
+        let number = 20;
+        if (number<21){
+             out.textContext = "Number is grater than 20"
+            console.log(number+" "+ "Number is greater than 20")
+        };
+
+        // Double Condition / Two conditions
+        let douCond = 20
+        if (douCond < 21){
+            Dis.textContext ="The Attendent is Adult"
+        }
+        else {
+            Dis.textContext ="The Attendent is Teenage"
+        };
+       // console.log("douCond");
+
+       //Multiple Condition
+       let VipClass = 200;
+       let EconomicClass = 100;
+       if(VipClass<EconomicClass){
+        Price.textContext = "The Number of Economic Guests are more than Rich Guests";
+       }
+       else if (VipClass>EconomicClass){
+        Price.textContext ="The Number of Rich Guests are more than Economic Guests";
+       }
+       else if(VipClass==EconomicClass){
+        Price.textContext ="The Number of Rich and Meduim Budget Guest are the equal";
+       }
+       console.log()
+
+    </script>
+</body>
+</html>
