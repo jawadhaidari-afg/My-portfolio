@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Condition Small Project</title>
+    <style>
+        table {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+            width: 80%;
+            margin: 10% 5% 5% 10%;
+            height: 100px;
+            border-radius: 5px;
+
+        }
+
+        caption {
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0 0 10px 0;
+        }
+
+        /* td {
+            color:1px solid green;
+        }
+        tr{
+            color:1px solid red;
+        } */
+
+        li {
+            list-style: none;
+        }
+
+        input {
+            width: 60px;
+        }
+        tfoot{
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <p id="gradeoutput"></p>
+    <p id="gradecore">12 Grade score</p>
+    <p id="grade11Score">11 Grade Score</p>
+    <table>
+        <caption>Grade10 Students number</caption>
+        <thead>
+            <tr>
+                <td>Name:</td>
+                <td>ID:</td>
+                <td>Biology</td>
+                <td>Physic</td>
+                <td>Chemistry</td>
+                <td>Math</td>
+                <td>Avarage</td>
+                <td>Group</td>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <ul>
+                    <td>
+                        <li><input type="text" id="name"></li>
+                    </td>
+                </ul>
+                <ul>
+                    <td>
+
+                        <li><input type="number" id="Id"></li>
+                    </td>
+                </ul>
+                <ul>
+                    <td>
+                        <li><input type="number" id="Biology" min="0" max="100" required></li>
+
+                    </td>
+                </ul>
+                <ul>
+                    <td>
+                        <li><input type="number" id="Physic" min="0" max="100" required></li>
+
+                    </td>
+                </ul>
+                <ul>
+                    <td>
+                        <li><input type="number" id="Chemistry" min="0" max="100" required></li>
+
+                    </td>
+                </ul>
+                <ul>
+                    <td>
+                        <li><input type="number" id="Math" min="0" max="100" required></li>
+
+                    </td>
+                </ul>
+                <ul>
+                    <td>
+                        <li><input type="number" id="Average" min="0" max="100" required></li>
+
+                    </td>
+                </ul>
+                <ul>
+                    <td>
+                        <li><input type="text" id="Group"></li>
+
+                    </td>
+                </ul>
+
+
+            </tr>
+        <tfoot rowspan8>
+            <!-- <tr> -->
+                <!-- <td>Table to Check Students' annual marks in this</td> -->
+            <!-- </tr> -->
+        </tfoot>
+    </table>
+
+    <script>
+        let output = document.getElementById("gradeoutput");
+        let score=document.getElementById("gradecore");
+        let grade =document.getElementById("grade11Score");
+
+        let Id = number;
+        let name = "string";
+        let Biology = number;
+        let Physic = numbers;
+        let Math = numbers;
+        let Average = AverageMark;
+        let Group = Catagories;
+
+        function group (Bio, Phy, Che, Math){
+            return Bio+Phy+Che+Math;
+        }
+        document.getElementById("Group").innerHTML = group;
+
+        function average(group,average){
+            return group/average;
+        }
+        document.getElementById("Average").innerHTML = average;
+
+        //if conditional 
+        let bio =80;
+        let phy = 75;
+        let math = 96;
+        let che = 82;
+        if(bio,phy,che,math < 250){
+            gradecore.textContext =" Group B"
+        }
+        else
+        {
+            gradecore.textContext ="Group A"
+        }
+
+        //else if Condition
+        let bio1 =80;
+        let phy1 = 75;
+        let math1 = 96;
+        let che1 = 82;
+        let Lit = 84;
+        let His = 67;
+        if (bio1,phy1,math1,che1,Lit,His <400){
+            grade11Score.textContext =" Group A";
+        }
+        else if (bio1,phy1,math1,che1,Lit,His > 400){
+             grade11Score.textContext =" Group A+";
+        }
+        else if (bio1,phy1,math1,che1,Lit,His===400){
+            grade11Score.textContext =" Group A+";
+        }
+        else if (bio1,phy1,math1,che1,Lit,His>350){
+            grade11Score.textContext =" Group B";
+        }
+        else if (bio1,phy1,math1,che1,Lit,His<300){
+              grade11Score.textContext =" Group c";
+        }
+        else if (bio1,phy1,math1,che1,Lit,His<250){
+              grade11Score.textContext =" Filled";
+        };
+    </script>
+</body>
+
+</html>
