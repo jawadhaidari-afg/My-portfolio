@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch </title>
+</head>
+<body>
+    <!-- <h1>Switch JS</h1>
+    <p>let a = 3;
+        switch(a){
+            case 1:
+                console.log("case1");
+                break;
+            case 2:
+                console.log("case2");
+                break;
+            case 3:
+                console.log("Case3");
+                break;
+            case 4:
+                console.log("Case4");
+                break;
+            default:
+                console.log("Default Value");
+        }
+    </p> -->
+
+    <h1>Switch in JS</h1>
+    <p>Quotes of The Day</p>
+    <p>Select Your Favorite Day to See The Quote Behind It</p>
+
+    <select name="dayNames" id="dayNames">
+        <option value="weekDay">WeekDay</option>
+        <option value="saturday">Saturday</option>
+        <option value="sunday">Sunday</option>
+        <option value="monday">Monday</option>
+        <option value="tuesday">Tuesday</option>
+        <option value="wednesday">Wednesday</option>
+        <option value="thursday">Thursday</option>
+        <option value="friday">Friday</option>
+    </select>
+    <p id="message"></p>
+
+    <script>
+        let weekDays = document.getElementById("dayNames");
+        let OutputMessage = document.getElementById("message");
+        weekDays.addEventListener("change", function(){
+            let dayQuotes = this.value;
+            let message=" ";
+            let fontsize=" ";
+            let backgroundcolor=" ";
+            switch(dayQuotes){
+                case "saturday":
+                    message= "Imagination is more Important than Knowledge.";
+                    fontsize="20px";
+                    backgroundcolor="powderblue";
+                    break;
+                case "sunday":
+                    message="Nothing in life is to be feared, it is only to be understood.";
+                    fontsize="22px";
+                    backgroundcolor="gray";
+                    break;
+                case "monday":
+                    message="Every painful story has a good ending.";
+                    fontsize="22px";
+                    backgroundcolor="lightgreen";
+                    break;
+                case "tuesday":
+                    message="If I have seen further, it is by standing on the shoulders of gaints.";
+                    fontsize="24px";
+                    backgroundcolor="lightblue";
+                    break;
+                case "wednesday":
+                    message="The good thing about science is that it's true whether or not you believe in.";
+                    fontsize="18px";
+                    backgroundcolor="purple";
+                    break;
+                case "thursday":
+                    message="Science and everday life cannot be separated.";
+                    fontsize="20px";
+                    backgroundcolor="green";
+                    break;
+                case "friday":
+                    message="The most beautiful experience we can is to be mysterious.";
+                    break;
+                    fontsize="24px";
+                    backgroundcolor="whitesmoke";
+                default: 
+                    message="None of The Week Day Quotes Selected Yet, Try Again!";
+                    console.log(dayQuotes);
+                    break;
+            }
+              OutputMessage.textContent = message;
+              OutputMessage.style.backgroundColor= backgroundcolor;
+              OutputMessage.style.fontSize = fontsize;
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Differences Between Loop, While and Do-While</title>
+</head>
+
+<body>
+    <h1>Loop, While & Do-While</h1>
+    <ol>
+        <h1> Loop </h1>
+        <p>There are four types of <b>Loop</b> in JS</p>
+        <li><h4>For</h4></li>
+            <p>Use to Loop in General array or objects</p>
+        <li><h4>For...in</h4></li>
+            <p>Used mostly to loop objects.</p>
+        <li><h4>For ...of</h4></li>
+            <p>Used mostly to loop arrays and objects</p>
+        <li><h4>forEach</h4></li>
+            <p>Used mostly to loop array with its index number</p>
+    </ol>
+    <h1>While & Do-While</h1>
+        <dl>
+            <dt><h4>While</h4>
+                <dd>Is the same as <b>Loop</b> but the difference is that, it keep executing codes till it false and then stops.</dd>
+            </dt>
+            <dt><h4>Do-While</h4>
+                <dd>Also the same as <b>While</b>, but the difference is that, it first executes the code then calculates the condition</dd>
+            </dt>
+        </dl>
+
+        <p>In below Examples can see the differences</p>
+
+        <P id="forloop"></P>
+        <p id="forarray"></p>
+        <P id="forinloop"></P>
+        <P id="forofloop"></P>
+        <P id="foreachloop"></P>
+        <P id="whileloop"></P>
+        <P id="dowhileloop"></P>
+
+        <script>
+            //Access HTML with JS
+            let genfor = document.getElementById("forloop");
+            let foraray = document.getElementById("forarray");
+            let forinobject = document.getElementById("forinloop");
+            let forofarray = document.getElementById("forofloop");
+            let foreachindex = document.getElementById("foreachloop");
+            let whileloop1 = document.getElementById("whileloop");
+            let dowhileloop2 = document.getElementById("dowhileloop");
+
+            //JS Codes
+            let i = 10;
+            let a = ["kabul", "Herat", "Mazar","Qandahara"]
+
+            for(i=10; i<20; i++){
+                const li = document.createElement("li");
+                li.textContent =+i;
+                genfor.appendChild(li);
+            }
+            // for(a=0; a<5;a++){
+            //     const li = document.createElement("li");
+            //     li.textContent=a+;
+            //     foraray.appendChild(a);
+
+            // }
+
+                // For...in loop
+                // literal object
+            // let obje = {
+            //     Firstname: "John",
+            //     lastname: "Doe",
+            //     height: "190cm",
+            //     weight: "72kg",
+            //     Passion: "Boxing Athlet"
+            // }
+            // for( let Names of obje){
+            //     let nama = document.createElement("nama");
+            //     names.textContent= Firstname+" "+Lastname;
+            //     foraray.appendChild(nama);
+            // }
+
+            //For...of loop
+            // let primeNum = [1,3,5,7,9];
+            // for(let Numb in primeNum){
+            //    let Prime = document.getElementById("forinobject").innerHTML="primeNum";
+           // console.log(primeNum)
+         //   }
+
+            //for ...of with objects
+            // let per = new object()
+            // per.Firstname= "Johon";
+            // per.Lastname= "Doe";
+            // per.height= "192cm";
+            // per.weight= "72kg";
+            // for(let ob in per){
+            //     let FirsNa = document.createElement("li");
+            //     FirsNa.textContent = ob;
+            //     forofarray.appendChild(FirsNa);
+
+            // }
+
+            //forEach loop
+         //   let evenNum = [2,4,6,8,10,12,14,16,18,20];
+           // console.log(evenNum.forEach[12]);
+         //   console.log(evenNum.length);
+
+            //While Loop
+            // let b = 100;
+            // while(b<0)
+            // {
+            //     let li =document.createElement("li");
+            //     li.textContent=b;
+            //     whileloop1.appendChild("li");
+            //     b++;
+            // }
+
+            //do-While Loop
+            let c = 50;
+            do{
+                let li = document.getElementById("li");
+                li.textContent=c;
+                dowhileloop2.appendChild("li");
+                c++;
+            }
+            while(c<0);
+        </script>
+</body>
+
+</html>
