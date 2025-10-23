@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Object Properties</title>
+</head>
+<body>
+    <ul>
+        <h1>JS Object Properties</h1>
+            <li>
+                 <p>Accessing Object Properties</p>
+                <p>Accessing Nested Object Properties</p>
+                <p>Adding or Updating Object Properties</p>
+                <p>Deleting Object Properties</p>
+                <p>Enumerating  / Looping Object Properties</p>
+            </li>
+    </ul>
+    <div id="dotnotation"></div>
+    <div id="squarebracket"></div>
+    <div id="expression"></div><br>
+    <div id="stone"></div>
+    <div id="stone1"></div>
+    <div id="marble"></div>
+    <div id="marble1"></div><br>
+    <div id="updating"></div>
+    <div id="updating1"></div>
+    <div id="adding"></div>
+    <div id="adding1"></div>
+    <div id="delete"></div>
+    <div id="delete1"></div>
+
+
+    <script>
+        //object syntax
+        const person = {
+            //key : "value",
+            name: "Ahmad",
+            lastName: "Ahmadi",
+            age: 21,
+            height: 189,
+        }
+        //accessing object properties
+            //- dot notation
+            //- square brackets
+            //- expression
+        document.getElementById("dotnotation").innerHTML = "This company recently hired an employee by name of" + person.name + "who got his graduatee at age" + person.age +" He is going to work with us since now on"; 
+
+        // - square brackets
+        document.getElementById("squarebracket").innerHTML = "This company recently hired an employee by name of" + person["name"] + "who got his graduatee at age" + person["age"] +" He is going to work with us since now on";
+
+        //- expression
+        const y = "Mahmood";
+        document.getElementById("expression").innerHTML= person[y + person.age];
+
+        //accessing Nested Object Properties
+        let material = {
+            totalbudget: "$10000",
+            stone: {
+                marble: "$60",
+                ordinarystone: "$15",
+                Highest_quality: "$100",
+            },
+            tile:{
+                peral:"$30",
+                SouthEast: "$10",
+            }
+        }
+        document.getElementById("stone").innerHTML=material.stone.marble;
+        document.getElementById("stone1").innerHTML=material["stone"]["Highest_quality"];
+
+        document.getElementById("marble").innerHTML=material.tile.SouthEast;
+        document.getElementById("marble1").innerHTML=material["tile"]["peral"];
+
+        // adding or updating object properties
+
+        let newprice =material.stone.marble="$80";
+        var discount = material.stone.ordinarystone="$7";
+        document.getElementById("updating").innerHTML=material.stone.marble;
+        document.getElementById("updating1").innerHTML=material["stone"]["ordinarystone"];
+
+        //updating object properties
+        let update_new_value = material.tile.newStone="$50";
+        let newmaterial= material.stone.whiteStone="$120";
+
+        document.getElementById("adding").innerHTML=material.tile.newStone;
+        document.getElementById("adding1").innerHTML=material.stone.whiteStone;
+
+        //Deleting object property
+        delete material.stone.marble;           //why doesn't work?
+        delete material.tile.peral;
+       document.getElementById("delete").innerHTML=material.stone.peral;
+
+       //Enumerating /looping the object properties
+       let loop = 
+            loop.firstname = "Ahmad";
+            loop.Lastname = "Ahmadi";
+            loop.age = "22";
+            loop.height ="192cm";
+
+        for(let key in material){
+            document.getElementById("delete1").innerHTML=key;    
+
+        }
+        let animal ={};
+        object.defineproperty(animal, "weight",{
+                value: "Elephant",
+                writbale: false,
+                enumeratable: false,
+                configurable: true,
+        })
+
+    </script>
+</body>
+</html>

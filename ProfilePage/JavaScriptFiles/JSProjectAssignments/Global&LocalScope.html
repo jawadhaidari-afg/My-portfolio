@@ -1,71 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global & Local Scope JS</title>
 </head>
+
 <body>
     <h1>Global & Local Scope in JS</h1>
-        <p>Here You will see the differences between Global & Local JS</p>
+    <p>Here You will see the differences between Global & Local JS</p>
 
-        <p id="GlobalScope"></p>
-        <p id="LocalScope"></p>
-        <p id="child"></p>
-        <p id="NoNamedVariable"></p>
+    <p id="GlobalScope"></p>
+    <p id="LocalScope"></p>
+    <p id="child"></p>
+    <p id="NoNamedVariable"></p>
 
-        <script>
-            let GolSco = document.getElementById("GlobalScope");
-            let LocSco = document.getElementById("LocalScope");
+    <script>
+        let GolSco = document.getElementById("GlobalScope");
+        let LocSco = document.getElementById("LocalScope");
 
 
-            //Gobal Scope
-            let global = 20;
-            let name = "Amin";
-            function result (){
-                const res = name;
-                res.textContent =res;
-                GolSco.appendChild(result);
-               //console.log(res);
-                
-            }
+        //Gobal Scope
+        let global = 20;
+        let name = "Amin";
+        function result() {
+            const res = name;
+            res.textContent = res;
+            GolSco.appendChild(result);
+            //console.log(res);
 
-            // local Scope
-            function local (){
-                let locSco = "Ahmad";
-                const show = locSco;
-                console.log(show);
-                document.getElementById("LocalScope").innerHTML=show;
-            }
+        }
 
-            //accessing variable from a child local scope
-            function parent (){
-                function child (){
-                    let price = "$"+20;
+        // // local Scope
+        // function local (){
+        //     let locSco = "Ahmad";
+        //     const show = locSco;
+        //     console.log(show);
+        //     document.getElementById("LocalScope").innerHTML=show;
+        // }
 
-                }
-                let par = price;
-               // console.log(par)
-               text.Content = par;
-               child.appendChild(par);
-              // document.getElementById("child").innerHTML=par;
-            }
+        // //accessing variable from a child local scope
+        // function parent (){
+        //     function child (){
+        //         let price = "$"+20;
 
-            //NoNamed Varible to function as global scope
+        //     }
+        //     let par = price;
+        //    // console.log(par)
+        //    text.Content = par;
+        //    child.appendChild(par);
+        //   // document.getElementById("child").innerHTML=par;
+        // }
 
-            function Noname(){
-                unknown = "Hello Kabul";
-            }
+        // //NoNamed Varible to function as global scope
 
-            function access(){
-                let GGloV = unknown;
-                access = textContent = GGloV;
-                NoNamedVariable.appendChild (GGloV);
+        // function Noname(){
+        //     unknown = "Hello Kabul";
+        // }
 
-            }
+        // function access(){
+        //     let GGloV = unknown;
+        //     access = textContent = GGloV;
+        //     NoNamedVariable.appendChild (GGloV);
 
-            
-            
-        </script>
+        // }
+
+
+
+
+    </script>
 </body>
+
 </html>

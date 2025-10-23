@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling in JS</title>
+</head>
+<body>
+    <script>
+        // try: the block where the errors happend.
+        // catch: the block where the errors catches.
+        //finally: the block where the codes execute either true or fales
+
+        try{
+             let conclusion = ("{name: 'Amin'}");
+             console.log(conclusion.name);
+        }
+        catch(error){
+            console.log(error.message);
+        }
+        finally{
+            console.log("I will execute the final part")
+        }
+
+        // error handling in a function
+        let x = 5;
+        function errorhandling (a,b)
+        {
+            if (x==12){
+                throw result ("The equation is correct");
+            }
+            return a+b;
+        }
+        try{
+            console.log(errorhandling(5+5));
+        }
+        catch(error){
+            console.log(error.message);
+            console.name("error.name");
+            console.log("error.stack")
+        }
+    </script>
+</body>
+</html>
