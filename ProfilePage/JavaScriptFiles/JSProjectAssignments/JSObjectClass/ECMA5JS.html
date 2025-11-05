@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES5 Object Methods</title>
+</head>
+<body>
+    <div id="display"></div>
+    <script>
+
+        // Object.create()
+        let Person = {
+            Name: "Jawad",
+            Age: 50,
+            Degree: "S1"
+        }
+
+        // let Details = new Person;        // Ordinary Taking Object 
+        // console.log(Details. Age);
+        var details = Object.create(Person);        // Built-in Object Manipulation
+        Person.Id = 7812                            // adding Object Method
+        //console.log(JSON.stringify(Person));
+        console.log(Person.Id);
+        
+        //Object.defineProperty()
+        const Car = {
+                brand: "BMW",
+                Model: "7Xiii",
+                Price: "$250.000"
+        }
+        let BMWdetails = Object.defineProperty(Car, "Color",{
+                value: 6,
+                enumerable: false,
+                configurable: false,
+                writable: false
+        })
+        Car.Price = "$245.000";
+        console.log(Car.Model+Car.Price);
+        document.getElementById("display").innerHTML = Car.Price;
+
+    </script>
+</body>
+</html>

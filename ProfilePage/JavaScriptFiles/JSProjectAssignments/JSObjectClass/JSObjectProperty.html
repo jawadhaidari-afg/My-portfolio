@@ -39,6 +39,7 @@
             lastName: "Ahmadi",
             age: 21,
             height: 189,
+            Mahmood21: "Mohammad21",
         }
         //accessing object properties
             //- dot notation
@@ -66,6 +67,12 @@
                 SouthEast: "$10",
             }
         }
+          for(let key in material){
+            document.getElementById("delete1").textContent=material[key];    
+            console.log(material[key]);
+
+        }
+        
         document.getElementById("stone").innerHTML=material.stone.marble;
         document.getElementById("stone1").innerHTML=material["stone"]["Highest_quality"];
 
@@ -92,23 +99,20 @@
        document.getElementById("delete").innerHTML=material.stone.peral;
 
        //Enumerating /looping the object properties
-       let loop = 
-            loop.firstname = "Ahmad";
-            loop.Lastname = "Ahmadi";
-            loop.age = "22";
-            loop.height ="192cm";
+    //    let loop = 
+    //         loop.firstname = "Ahmad";
+    //         loop.Lastname = "Ahmadi";
+    //         loop.age = "22";
+    //         loop.height ="192cm";
 
-        for(let key in material){
-            document.getElementById("delete1").innerHTML=key;    
-
-        }
-        let animal ={};
-        object.defineproperty(animal, "weight",{
-                value: "Elephant",
-                writbale: false,
-                enumeratable: false,
-                configurable: true,
-        })
+      
+        // let animal ={};
+        // object.defineproperty(animal, "weight",{
+        //         value: "Elephant",
+        //         writbale: false,
+        //         enumeratable: false,
+        //         configurable: true,
+        // })
 
     </script>
 </body>
