@@ -39,6 +39,41 @@
         console.log(Car.Model+Car.Price);
         document.getElementById("display").innerHTML = Car.Price;
 
+        // Obejct.defineProperties()
+        const Animals = {
+            Name: "Elephant",
+            Type: "Vegitarian",
+            Size: "Big"
+        }
+        Object.defineProperties(Animals, {
+        Size:{ 
+            value: "Mass",
+            enumerable: false,
+            writable: true,
+            configurable: false,
+            },
+
+        
+        Type: {
+            value: "BigSized",
+            writable: false,
+            enumerable: false,
+            configurable: false}
+
+
+        });
+        console.log(Animals.Size);
+        document.getElementById("display").innerHTML = Animals.Type;
+    
+        // Object.getOwnPropertyDescriptor()
+        const descriptor = Object.getOwnPropertyDescriptor(Animals, "Size");
+        console.log(descriptor.configurable);
+        const desc1 = Object.getOwnPropertyDescriptor(Animals,"Type" );
+        console.log(desc1.writable)
+
+        //Object.getOwnPropertyNames()
+        
+
     </script>
 </body>
 </html>

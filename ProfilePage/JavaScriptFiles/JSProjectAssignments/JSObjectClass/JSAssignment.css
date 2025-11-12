@@ -1,0 +1,47 @@
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+
+}
+caption{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+table {
+    background-color: white;
+    /* display: flex; */
+    border: 1px solid black;
+    margin: 15% 5% 15% 5%;
+    /* width: 100%; */
+    max-width: 95%;
+    height: auto;
+    border-collapse: collapse;
+    /* border-radius: 15px; */
+}
+th {
+    border: 1px solid black;
+    width: 2rem 0 0 0;
+    background-color: darkred ;
+    color: whitesmoke;
+}
+tr {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    
+}
+td{
+    border: 1px solid black;
+
+}
+input {
+    width: 95%;
+    padding-left: 3.8%;
+    height: 100%;
+    border: transparent;
+}
+

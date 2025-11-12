@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Table</title>
+</head>
+    <link rel="stylesheet" href="JSAssignment.css">
+    <style>
+        #id, #marks{
+                width: 100px;
+                border:1px solid black;
+                margin: 1rem;
+
+        }
+    </style>
+<body>
+
+    <!-- form Section  -->
+    <form action="" method="post">
+        <label for="id">Enter Your Id:</label>
+        <input type="text" id="id" name="id"><br>
+        <label for="Subject">Choose The Subject:</label>
+        <select name="Subject" id="Subject"> 
+            <option value="Mathematics">Mathematics</option>
+            <option value="English Literature">English Literature</option>
+            <option value="Science">Science</option>
+            <option value="History">History</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Geography">Geography</option>
+            <option value="Physical Education">Physical Education</option>
+            <option value="Art & Design">Art & Design</option>
+            <option value="Foreign Language">Foreign Language</option>
+        </select>
+             <br>
+             <label for="semester">Choose The Semester:</label>
+             <select name="semester" id="semester">
+             <option value="1st_Semester">1st_Semester</option>
+             <option value="2nd_Semester">2nd_Semester</option>
+             <option value="3rd_Semester">3rd_Semester</option>
+             <option value="4th_Semester">4th_Semester</option>
+    </select>
+              <br>
+              <label for="marks">Enter Your Score:</label>
+              <input type="text" id="marks"><br>
+              <label for="save">Save Your Score:</label>
+              <button id="save">Click</button>
+    </form>
+    <br>
+
+    <p id="output"></p>
+
+
+    <!-- Table Section  -->
+
+
+    <table>
+        <caption>Student Score Table</caption>
+        <thead>
+            <tr>
+                <th style="width:10rem;">Range</th>
+                <th>1st <br> Semester</th>
+                <th>2nd <br> Semester</th>
+                <th>3rd <br> Semester</th>
+                <th>4th <br> Semester</th>
+                <th>Average <br> Grade</th>
+                <th>Garde</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mathematics</td>
+                <td><input type="number" id="Semester_1st"></td>
+                <td><input type="number" id="Semester_2nd"></td>
+                <td><input type="number" id="Semester_3rd"></td>
+                <td><input type="number" id="Semester_4th"></td>
+                <td><input type="number" id="Average"></td>
+                <td><input type="number" id="Group"></td>
+            </tr>
+            <tr>
+                <td>English Literature</td>
+                <td><input type="number" id="English"></td>
+                <td><input type="number" id="English"></td>
+                <td><input type="number" id="English"></td>
+                <td><input type="number" id="English"></td>
+                <td><input type="number" id="English"></td>
+                <td><input type="number" id="English"></td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td><input type="number" id="Science"></td>
+                <td><input type="number" id="Science"></td>
+                <td><input type="number" id="Science"></td>
+                <td><input type="number" id="Science"></td>
+                <td><input type="number" id="Science"></td>
+                <td><input type="number" id="Science"></td>
+            </tr>
+            <tr>
+                <td>History</td>
+                <td><input type="number" id="History"></td>
+                <td><input type="number" id="History"></td>
+                <td><input type="number" id="History"></td>
+                <td><input type="number" id="History"></td>
+                <td><input type="number" id="History"></td>
+                <td><input type="number" id="History"></td>
+            </tr>
+            <tr>
+                <td>Computer Science</td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+            </tr>
+            <tr>
+                <td>Geography</td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+            </tr>
+            <tr>
+                <td>Physical Education</td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+            </tr>
+            <tr>
+                <td>Art & Design</td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+            </tr>
+            <tr>
+                <td>Foreign Language</td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+                <td><input type="number" id="mark"></td>
+            </tr>
+
+        </tbody>
+        <P id="1st"></P>
+        <P id="2nd"></P>
+        <P id="3rd"></P>
+        <P id="4th"></P>
+        <P id="A_score"></P>
+        <P id="G_group"></P>
+
+      <script>
+          const id = document.getElementById("id");
+           const subject = document.getElementById("Subject");
+          const marks = document.getElementById("marks");
+          const Btnsave = document.getElementById("save");
+
+        //   Btnsave.addEventListener("click", function () {
+        //       document.getElementById("output").innerHTML = id.value + " " + Subject.value + " " + marks.value + save.value + " " + semester.value;
+        //       console.log();
+        //   })
+
+        
+
+        Btnsave.addEventListener("click", function(){
+                document.getElementById("1st").innerHTML = Semester_1st.value;
+        });
+    </script>
+</body>
+
+</html>

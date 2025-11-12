@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Score Table</title>
+    <link rel="stylesheet" href="JSAssignment.css">
+</head>
+<body>
+<table>
+    <caption>Student Score Table</caption>
+    <thead>
+        <tr>
+            <th style="width:10rem;">Range</th>
+            <th>1st <br> Semester</th>
+            <th>2nd <br> Semester</th>
+            <th>3rd <br> Semester</th>
+            <th>4th <br> Semester</th>
+            <th>Average <br> Grade</th>
+            <th>Garde</th>
+            <!-- <th>Subject</th> -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mathematics</td>
+            <td><input type="number" id="Mathematics"></td>
+            <td><input type="number" id="Mathematics"></td>
+            <td><input type="number" id="Mathematics"></td>
+            <td><input type="number" id="Mathematics"></td>
+            <td><input type="number" id="Mathematics"></td>
+            <td><input type="number" id="Grade"></td>
+            <!-- <td><input type="number" id="mark"></td> -->
+        </tr>
+        <tr>
+            <td>English Literature</td>
+            <td><input type="number" id="English"></td>
+            <td><input type="number" id="English"></td>
+            <td><input type="number" id="English"></td>
+            <td><input type="number" id="English"></td>
+            <td><input type="number" id="English"></td>
+            <td><input type="number" id="English"></td>
+            <!-- <td><input type="number" id="mark"></td> -->
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td><input type="number" id="Science"></td>
+            <td><input type="number" id="Science"></td>
+            <td><input type="number" id="Science"></td>
+            <td><input type="number" id="Science"></td>
+            <td><input type="number" id="Science"></td>
+            <td><input type="number" id="Science"></td>
+            <!-- <td><input type="number" id="mark"></td> -->
+        </tr>
+        <tr>
+            <td>History</td>
+            <td><input type="number" id="History"></td>
+            <td><input type="number" id="History"></td>
+            <td><input type="number" id="History"></td>
+            <td><input type="number" id="History"></td>
+            <td><input type="number" id="History"></td>
+            <td><input type="number" id="History"></td>
+            <!-- <td><input type="number" id="mark"></td> -->
+        </tr>
+        <tr>
+            <td>Computer Science</td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <!-- <td><input type="number" id="mark"></td> -->
+        </tr>
+        <tr>
+            <td>Geography</td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <!-- <td><input type="number" id="mark"></td> -->
+        </tr>
+        <tr>
+            <td>Physical Education</td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <!-- <td><input type="number" id="mark"></td> -->
+        </tr>
+        <tr>
+            <td>Art & Design</td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <!-- <td><input type="number" id="mark"></td> -->
+        </tr>
+        <tr>
+            <td>Foreign Language</td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <td><input type="number" id="mark"></td>
+            <!-- <td><input type="number" id="mark"></td> -->
+        </tr>
+
+     
+     
+    </tbody>
+</table>
+<!-- <script src="JSAssignment.js"></script> -->
+    <P id="addition"></P>
+    <p id="1stSemester"></p>
+    <p id="2ndSemester"></p>
+    <p id="3rdSemester"></p>
+    <p id="4thSemester"></p>
+    <p id="AverageGrade"></p>
+    <p id="Grade"></p>
+    <script>
+        let s_1st = 100;
+        let s_2nd = 100;
+        let s_3rd = 100;
+        let s_4th = 100;
+        function add (s_1st, s_2nd){
+            return s_1st+s_2nd;
+        }
+        console.log(add(100,100));
+
+        Class Grade {
+            constructor() {
+                let s_1st = 100;
+                let s_2nd = 100;
+                let s_3rd = 100;
+                let s_4th = 100;       
+            }
+            return this.s_1st;
+        }
+        const add = new grade ();
+        consoloe.log(Grade.s_1st);
+
+        class Bike {
+            constructor(){
+            this.gear =5;
+        }
+            getGear(){
+                return this.gear;
+            }
+        }
+        class Suzuki extends Bike {
+            constructor() {
+                super();
+                this.brand = "yamaha"
+            }
+            getBrand(){
+                return this.brand
+            }
+        }
+        // const suzukiBike = new Suzuki();
+        // document.getElementById("addition").innerHTML =suzukiBike.getBrand();
+        // console.log(suzukiBike.getBrand())
+
+        // Class Grade {
+        //     constructor(a,b){
+        //         return a+b;}
+        //     getgrade ();
+        //     return this.
+            
+
+        // }
+        // const add = new Grade (100, 200);
+        // console.log()
+        
+        // document.getElementById("1stSemester");
+        // let Math = 100;
+        // let English = 90;
+        // if (Math > English) {
+        //     let result = Math + English;
+        // }
+        // console.log(result.Math)
+
+        // function addition (a,b,c){
+        //         // return a+b,c;
+        // }
+        // const value = (20+90*40*10);
+        // console.log(value);
+    </script>
+</body>
+</html>
