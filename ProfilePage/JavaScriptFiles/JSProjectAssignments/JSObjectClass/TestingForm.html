@@ -35,7 +35,7 @@
 <body>
     <!--Form Section-->
     <input type="text" id="id" placeholder="Enter ID"><br>
-    <select name="sujects" id="subjects" style="width: 150px;">
+    <select name="subjects" id="subjects" style="width: 150px;">
         <option value="English">English</option>
         <option value="Science">Science</option>
         <option value="Math">Math</option>
@@ -43,7 +43,7 @@
     </select>
     <br>
 
-        <select name="Semester" id="Semester" style="width: 150px;">
+    <select name="Semester" id="Terms" style="width: 150px;">
         <option value="First_term">First Term</option>
         <option value="Second_term">Second Term</option>
         <option value="Third_term">Third Term</option>
@@ -53,21 +53,21 @@
 
     <input type="number" id="score" placeholder="Add Your Score"><br>
     <button id="click" style="width: 150px;">click</button> <br>
-    <!-- <button id="total" style="width: 150px;">Average</button> -->
 
-    <!-- <p id="result">Result of terms:</p> -->
+    <p id="result">Result of terms:</p>
 
 
     <!--Table Section -->
         <table style="border: 1px solid black; width: 100%;">
             <caption style="font-size: 24px;">Table Score</caption>
             <thead>
-                <tr> <th>Subjects</th>
+                <tr>
+                    <th>Subjects</th>
                     <th>1st_Semester</th>
                     <th>2nd_Semester</th>
                     <th>3rd_Semester</th>
                     <th>4th_Semester</th>
-                    <th>Total</th>
+                    <th>Total Score</th>
                     <th>Average</th>
                     <th>Group</th>
                 </tr>
@@ -75,7 +75,7 @@
             <tbody>
                 <tr>
                     <td>English</td>
-                   <td ><p id="englishSemester1"></p></td>
+                   <td> <p id="englishSemester1"></p> </td>
                    <td id="englishSemester2"></td>
                    <td id="englishSemester3"></td>
                    <td id="englishSemester4"></td>
@@ -85,7 +85,7 @@
                 </tr>
                  <tr>
                     <td>Science</td>
-                   <td ><p id="sciencesemester1"></p></td>
+                   <td> <p id="sciencesemester1"></p> </td>
                    <td id="sciencesemester2"></td>
                    <td id="sciencesemester3"></td>
                    <td id="sciencesemester4"></td>
@@ -94,7 +94,7 @@
                    <td id="scienceGroup"></td>
                 </tr> 
                  <tr>   <td>Math</td>
-                   <td ><p id="mathSemester1"></p></td>
+                   <td><p id="mathSemester1"></p></td>
                    <td id="mathSemester2"></td>
                    <td id="mathSemester3"></td>
                    <td id="mathSemester4"></td>
@@ -104,7 +104,7 @@
                 </tr>
                  <tr>
                      <td>History</td>
-                   <td ><p id="historySemester1"></p></td>
+                   <td><p id="historySemester1"></p></td>
                    <td id="historySemester2"></td>
                    <td id="historySemester3"></td>
                    <td id="historySemester4"></td>
@@ -112,12 +112,10 @@
                    <td id="historyAverage"></td>
                    <td id="historyGroup"></td>
                  </tr>
-
             </tbody>
-          
         </table>
 
-    <script src="TestingForm.js"></script>
+    <!-- <script src="TestingForm.js"></script> -->
 </body>
 
 </html>
