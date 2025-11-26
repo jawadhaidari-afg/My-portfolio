@@ -6,39 +6,55 @@ body{
 }
 .Main{
     /* border: 1px solid black; */
-    box-shadow:5px 7px 10px rgba(0, 0, 0, 0.3) ;
-    width: 500px;
-    height: 400px;
+    box-shadow:5px 10px 12px rgba(0, 0, 0, 0.4) ;
+    width: 800px;
+    height: 600px;
     /* display: grid;
     justify-content: center;
     align-items: center; */
     margin: auto; 
+    margin-top: 5%;
     padding: 10px;
     border-radius: 12px;
-    background-color: whitesmoke;
+    background-color: rgb(251, 248, 248);
     /* position: fixed;
     top: 50%;
     right: 50%;
     translate:(-50,-50);
     */
+    background-image: url("Image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .Top, .Bottom{
-    border:1px solid black;
-    width: 400px;
-    height: 100px;
+    /* border:1px solid black; */
+    width: 500px;
+    height: 230px;
     margin: auto;
-    background-color: white;
-    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+    box-shadow: 5px 7px 12px rgba(0, 0, 0, 0.4);
+   
 }
 .Top{
-    margin: 60px 50px 25px 50px;
+    margin: 40px 50px 10px 50px;
     border-radius: 12px;
+    background-image: url("IMG_3277.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 230px;
+
 }
 .Bottom{
-    margin: 60px 50px 25px 50px;
+    margin: 40px 50px 10px 50px;
     border-radius: 12px;
     text-align: center;
     font-size:26px ;
+    background-image: url("IMG_3285.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 230px;
     
 }
 #Input_temperature{
@@ -48,7 +64,7 @@ body{
     font-size: 24px;
     padding-left: 15px;
     border-radius: 7px 0 0 7px;
-    border: 1px solid black;
+    border: transparent
 }
 #temSymbol{
     width: 50px;
@@ -57,7 +73,7 @@ body{
     font-size: 24px;
     margin: 20px 0 20px 0;
     border-radius: 0 7px 7px 0 ;
-    border: 1px solid black;
+    border: transparent;
 }
 #BTN_Calculate{
     width: 120px;
