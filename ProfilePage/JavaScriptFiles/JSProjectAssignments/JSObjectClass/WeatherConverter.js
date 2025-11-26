@@ -1,20 +1,26 @@
 //Input DOM Sections
-let Temperature = Degree;
-document.getElementById("Input_temperature").innerHTML=Degree;
-let Tem_symbol=Symbol;
-document.getElementById("temSymbol").innerHTML=Symbol;
-let Calculate=Counting;
-document.getElementById("click").innerHTML=Counting;
+let Temperature =
+document.getElementById("Input_temperature");
+let Tem_symbol=
+document.getElementById("temSymbol");
+let click=
+document.getElementById("BTN_Calculate");
 
 // Temperature Conditional Section
 let Celsius=0;
+// let Celsius1= (Farenhit-32)*5/9;
 let Farenhit=32;
+// let Farenhit1=(Farenhit)*5/9;
 click.addEventListener("click",function(){
-    if(Input_temperature.value=="C"){
-        return Degree-32;
-        console.log()
+    if(Temperature.value=="C"){
+        return (Celsius)*5/9;
+        // return Celsius1;
+        document.getElementById("Bottom").innerHTML=Temperature;
     }
-    else if (addEventListener==F){
-        return Farenhit+32;
+    else if (Temperature=="F"){
+        return (Farenhit-32)*5/9;
+        // return Farenhit1;
+        document.getElementById("Bottom").innerHTML=Temperature;
     }
 })
+console.log()
