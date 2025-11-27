@@ -22,7 +22,7 @@ body{
     right: 50%;
     translate:(-50,-50);
     */
-    background-image: url("Imaage.jpg.jpg");
+    background-image: url("Background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
