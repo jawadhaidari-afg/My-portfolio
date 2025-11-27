@@ -15,12 +15,12 @@ click.addEventListener("click",function(){
     if(Temperature.value=="C"){
         return (Celsius)*5/9;
         // return Celsius1;
-        document.getElementById("Bottom").innerHTML=Temperature;
+        document.getElementById("Tem_display").innerHTML=Temperature;
     }
     else if (Temperature=="F"){
         return (Farenhit-32)*5/9;
         // return Farenhit1;
-        document.getElementById("Bottom").innerHTML=Temperature;
+        document.getElementById("Tem_display").innerHTML=Temperature;
     }
 })
 console.log()

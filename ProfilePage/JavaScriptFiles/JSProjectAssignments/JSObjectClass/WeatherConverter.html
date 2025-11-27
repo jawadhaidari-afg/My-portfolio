@@ -10,14 +10,17 @@
     <div class="Main">
         <div class="Top">
             <input type="number" id="Input_temperature" placeholder="Enter Temperature">
-         <select name="" id="temSymbol">
+         <select name="" id="temSymbol" style="display: inline;">
             <option value="F">F</option>
             <option value="C">C</option>
          </select>
+         <button id="BTN_Calculate">Calculate</button>
          
         </div>
         <div class="Bottom">
-            <button id="BTN_Calculate">Calculate</button>
+            <div id="Tem_display"></div>
+            <div id="Name">New York</div>
+            <div id="Weather_situation">Cloudy</div>
         </div>
     </div>
     <script src="WeatherConverter.js"></script>
