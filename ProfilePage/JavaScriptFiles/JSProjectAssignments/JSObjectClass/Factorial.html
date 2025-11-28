@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial </title>
+</head>
+
+<body>
+    <!--Febonacci-->
+    <div id="output"></div>
+    <script>
+        let output = document.getElementById("output");
+        let n, n1, n2, i, sum;  //Declaration
+        n1 = 0; //initialization
+        n2 = 1;
+        i = 2;
+        n = parseInt(prompt("Enter a Number"));
+        // while (i <= n) {
+        //     output.innerHTML+="<br>" +n1;
+        //     sum = n1+n2;
+        //     n1 = n2;
+        //     n2 = sum;
+        //     i++;
+        // }
+
+
+        // for(;i<=n;i++){
+        //     output.innerHTML+="<br>"+n1;
+        //     sum=n1+n2;
+        //     n1=n2;
+        //     n2=sum;
+        // }
+
+        do{
+            console.log(n1);
+            sum=n1+n2;
+            n1=n2;
+            n2=sum;
+            i++;
+            
+        }
+        while(i<=n);
+        output.innerHTML+="<br>"+n1;
+
+    </script>
+</body>
+
+</html>

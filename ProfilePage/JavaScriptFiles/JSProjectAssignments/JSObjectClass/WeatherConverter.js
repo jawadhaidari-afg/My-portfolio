@@ -20,8 +20,5 @@ BTN.addEventListener("click", function () {
         }
         document.getElementById("Tem_display").innerHTML = Centigrate(Temperature.value);
     }
-
 });
-
-
 console.log()
