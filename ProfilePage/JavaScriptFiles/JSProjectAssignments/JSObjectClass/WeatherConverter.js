@@ -1,26 +1,27 @@
 //Input DOM Sections
-let Temperature =
-document.getElementById("Input_temperature");
-let Tem_symbol=
-document.getElementById("temSymbol");
-let click=
-document.getElementById("BTN_Calculate");
+let Temperature = document.getElementById("Input_temperature");
+let Tem_symbol = document.getElementById("temSymbol");
+let BTN = document.getElementById("BTN_Calculate");
 
 // Temperature Conditional Section
-let Celsius=0;
-// let Celsius1= (Farenhit-32)*5/9;
-let Farenhit=32;
-// let Farenhit1=(Farenhit)*5/9;
-click.addEventListener("click",function(){
-    if(Temperature.value=="C"){
-        return (Celsius)*5/9;
-        // return Celsius1;
-        document.getElementById("Tem_display").innerHTML=Temperature;
+
+BTN.addEventListener("click", function () {
+    console.log(Temperature.value);
+    if (Tem_symbol.value == "C") {
+        function Faranhit(val) {
+            return (val * 9 / 5) + 32;
+        }
+        document.getElementById("Tem_display").innerHTML = Faranhit(Temperature.value);
+
     }
-    else if (Temperature=="F"){
-        return (Farenhit-32)*5/9;
-        // return Farenhit1;
-        document.getElementById("Tem_display").innerHTML=Temperature;
+    else if (Tem_symbol.value == "F") {
+        function Centigrate(value) {
+            return (value - 32) * 5 / 9;
+        }
+        document.getElementById("Tem_display").innerHTML = Centigrate(Temperature.value);
     }
-})
+
+});
+
+
 console.log()
