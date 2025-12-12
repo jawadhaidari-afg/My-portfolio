@@ -21,6 +21,7 @@
             }
             return a;
         }
+        console.log(GCD(16, 4))
         // document.getElementById("output").innerHTML=GCD(40,5);
 
         //Recursion
@@ -29,6 +30,7 @@
             if (b === 0) return a;
             return GCD1(b, a % b);
         }
+        console.log(GCD1(14, 6))
         //  document.getElementById("output").innerHTML=GCD1(35,5);
 
         // looping
@@ -41,17 +43,18 @@
             }
             return z;
         }
-        document.getElementById("output").innerHTML = GCD2(80, 45);
+        console.log(GCD2(100, 15))
+        // document.getElementById("output").innerHTML = GCD2(80, 45);
 
         //factorial 
-        function factorial(n){
-            let factor =1;
-            for(let i=1;i<=n;i++){
-                factor*=i;
+        function factorial(n) {
+            let factor = 1;
+            for (let i = 1; i <= n; i++) {
+                factor *= i;
             }
             return factor;
         }
-        document.getElementById("output").innerHTML=factorial(10);
+        document.getElementById("output").innerHTML = factorial(10);
     </script>
 </body>
 

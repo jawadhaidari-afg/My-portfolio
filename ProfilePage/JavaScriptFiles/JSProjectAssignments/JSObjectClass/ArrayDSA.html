@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and DSA</title>
+</head>
+
+<body>
+    <script>
+
+        let x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]; // why doesn't work when equal to x;
+        let Arr = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "a", "b", "c", "d", "e", "f", "g", "h", "i", "j");
+        //Element of X = 10
+        //Index Number = 0-9
+        // x0[0]=1;
+        // x1[1]=2;
+        // x3[2]=3;
+        // x4[3]=4;
+        // x5[4]=5;
+        // x6[5]=6;
+        // x7[6]=7;
+        // x8[7]=8;
+        // x9[8]=9;
+        // x10[9]=10;
+        // x = n-1;
+
+        console.log(Arr);
+
+        // Traverse
+        //Search
+        //Update
+        //Delete
+        //Insert
+        //Display
+
+        //Traverse 
+        for (Display in Arr) {
+            console.log(Display);
+        }
+
+        // Search
+        //  for(let i =0; i<=Arr.length; i++){
+        //  if(Arr[i]==10){
+        //     console.log(`The index of f is:${f}`);
+        //  }
+        //  };
+
+        //Update
+        Arr[4] = "Hello World";
+        Arr[10] = "10.000";
+        console.log(Arr);
+
+        //Insertion
+        for (let i = 0; i <= Arr.lenght; i++) {
+            Arr[i] = i + 10;
+            console.log(Arr[i]);
+        }
+
+        //Delete
+        // Arr[10] = "";
+        // console.log(Arr);
+
+        for (let i = 0; i < Arr; i++) {
+            Arr = i - 1;
+            console.log(i);
+        }
+    </script>
+</body>
+
+</html>
